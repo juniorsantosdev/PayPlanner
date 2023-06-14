@@ -26,7 +26,7 @@ export class RevenuesComponent implements OnInit, AfterViewInit {
     'tipoReceita',
     'valor',
     'dataEntrada',
-    '_id',
+    /*'_id',*/
     'acoes'
   ]
   @ViewChild('paginator') paginator!: MatPaginator;
@@ -116,14 +116,14 @@ export class RevenuesComponent implements OnInit, AfterViewInit {
   }
 
   selectAction(action: string, element: any) {
-    if(action.indexOf('edit.png') != -1) {
+    /*if(action.indexOf('edit.png') != -1) {
       this.dialog.open(UpdateRevenuesComponent, {
         width: '600px',
         data: {
           data: element
         }
       })
-    } else {
+    }*/  {
       const question = confirm('Tem certeza que deseja excluir essa Receita?')
 
       if(question) {

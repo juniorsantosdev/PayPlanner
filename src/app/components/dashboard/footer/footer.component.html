@@ -1,12 +1,52 @@
 <div class="container-fluid text-center footer fixed-bottom">
-  <div class="row">
-    <div  class="col-4">
-     <button routerLink="/revenus">
-      Receita
-     </button> 
+  <div class="row mt-2">
+    <div  class="col-3">
+      <div routerLink="/dashboard" routerLinkActive="ativo" [class.ativo]="isPaginaAtiva('/dashboard')">
+        <img class="icone icone-ativo" *ngIf="isPaginaAtiva('/dashboard')"  src="../../../../assets/images/pagina-inicial.png" alt="">
+        <img class="icone icone-inativo" *ngIf="!isPaginaAtiva('/dashboard')"  src="../../../../assets/images/pagina-inicial (1).png" alt="">
+      </div>
+      <div class="row mt-1">
+        <label routerLink="/dashboard">Home</label>
+      </div>   
     </div>
-    <div class="col-4">Despesa</div>
-    <div class="col-4">teste</div>
+    <!--<div  class="col-3">
+      <div routerLink="/revenus"  routerLinkActive="ativo" [class.ativo]="isPaginaAtiva('/revenues')">
+        <img class="icone icone-ativo" *ngIf="isPaginaAtiva('/revenues')"  src="../../../../assets/images/adicionar (1).png" alt="">
+        <img class="icone icone-inativo" *ngIf="!isPaginaAtiva('/revenues')"  src="../../../../assets/images/adicionar (1).png"  alt="">
+      </div>
+      <div class="row mt-1">
+        <label routerLink="/revenus">Receita</label>
+      </div>   
+    </div>-->
+    <div class="col-3">
+      <div routerLink="/revenus"  routerLinkActive="ativo" [class.ativo]="isPaginaAtiva('/revenus')">
+        <img class="icone icone-ativo" *ngIf="isPaginaAtiva('/revenus')" src="../../../../assets/images/adicionar.png"  alt="">
+        <img class="icone icone-inativo" *ngIf="!isPaginaAtiva('/revenus')"  src="../../../../assets/images/adicionar (1).png">
+      </div>
+      <div class="row mt-1">
+        <label routerLink="/revenus">Receita</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div routerLink="/debts"  routerLinkActive="ativo" [class.ativo]="isPaginaAtiva('/debts')">
+        <img class="icone icone-ativo" *ngIf="isPaginaAtiva('/debts')" src="../../../../assets/images/falido.png"  alt="">
+        <img class="icone icone-inativo" *ngIf="!isPaginaAtiva('/debts')"  src="../../../../assets/images/falido (1).png">
+      </div>
+      <div class="row mt-1">
+        <label routerLink="/debts">Despesa</label>
+      </div>
+    </div>
+    <div class="col-3"(click)="logout()">
+      <div>
+        <img class="" src="../../../../assets/images/sair (1).png"  alt="">
+      </div>
+      <div class="row mt-1">
+        <a (click)="logout()">Sair</a>
+      </div>
+    </div>
+
   </div>
   
 </div>
+
+

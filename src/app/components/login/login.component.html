@@ -1,4 +1,24 @@
+<style>
+    img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: fadeOut 3s;
+    }
 
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .esconder-imagem {
+      display: none;
+    }
+</style>
+<img src="../../../assets/images/Entrada App (2).png" alt="" class="animacao-desaparecendo w-100" onanimationend="this.classList.add('esconder-imagem')" style="height: 100vh;">
   <div class="d-flex align-items-center justify-content-center p-5 login">
     <div class="row ">
       <div class="col-12">
@@ -108,3 +128,5 @@
       </div>
     </div>
   </div>
+
+  

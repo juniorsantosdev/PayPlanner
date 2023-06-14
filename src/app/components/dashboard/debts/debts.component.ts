@@ -24,11 +24,11 @@ export class DebtsComponent implements OnInit, AfterViewInit {
   @ViewChild('paginator') paginator!: MatPaginator;
   monthSelelected!: string;
   displayedColumns: string[] = [
-    'divida',
+    /*'divida',*/
     'categoria',
     'valor',
     'dataVencimento',
-    '_id',
+    /*'_id',*/
     'acoes'
   ]
   constructor(private dialog: MatDialog,

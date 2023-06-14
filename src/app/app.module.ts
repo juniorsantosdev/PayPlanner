@@ -9,12 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedMaterialModule } from './shared/shared-material/shared-material.module';
 import { ToastrModule } from 'ngx-toastr';
 import { TokenInterceptor } from './auth/token.interceptor';
-import { RevenuesButtonComponent } from './dashboard/revenues-button/revenues-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RevenuesButtonComponent
   ],
   imports: [
     BrowserModule,

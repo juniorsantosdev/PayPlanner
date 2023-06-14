@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GuardGuard } from './guards/guard.guard';
 import { RevenuesComponent } from './components/dashboard/revenues/revenues.component';
 import * as path from 'path';
+import { DebtsComponent } from './components/dashboard/debts/debts.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,9 @@ const routes: Routes = [
 
   {
     path: 'revenus' , component: RevenuesComponent
+  },
+  {
+    path: 'debts' , component: DebtsComponent
   }
 ];
 
